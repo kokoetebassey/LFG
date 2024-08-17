@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>LFG</h1>
+        </div>
+    <div class="container1">
+        <img src="images/twitter-3-logo.png" alt="LFG" width="35">
+        <img src="images/telegram-logo.png" alt="LFG" width="35">
+        <img src="images/lfg-logo.svg" alt="LFG" width="25">
+        <img src="images/lfg-logo2.png" alt="LFG" width="25">
+    
+    </div>
+    </div>
+    <div class="text">
+        <h1>money, don't hate no money. You scared. Scared money don't make no money.</h1>
+    </div>
+    <div class="text">
+        <h4>Scared money make no fucking money, you get that?</h4>
+    </div>
+    <div class="input-container text1">
+        <label for="">Contract Address</label>
+        <textarea id="contractAddress" readonly>6zAVwSFowp8Mqi4gex1GxjPdWQgZA3pGmaUaVXftrUMp</textarea>
+        <button id="copyButton" onclick="copyAddress()">
+            <img src="images/copy.png" alt="Cop111" width="20">
+        </button>
+    </div>
+    <div class="link-container">
+        <a href="https://example.com" target="_blank" class="image-button">
+            <img src="images/lfg-logo.svg" alt="Visit Website" width="10">
+        </a>
+        <h4>DEXScreener</h4>
+    </div>
+    <div class=" link-color">
+        <a href="https://example.com" target="_blank" class="image-button">
+            <img src="images/buy-logo.png" alt="Visit Website" width="10">
+        </a>
+        <h4>DEXScreener</h4>
+    </div>
+    <footer>
+        <p>&copy; 2024 AlexForm. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function copyAddress() {
+            var copyText = document.getElementById("contractAddress");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            navigator.clipboard.writeText(copyText.value).then(() => {
+                alert("Copied the contract address: " + copyText.value);
+            });
+        }
+    </script>
+</body>
+</html>

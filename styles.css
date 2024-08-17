@@ -1,0 +1,129 @@
+body {
+    background-color: black;
+    margin: 0;
+
+overflow: scroll;
+    padding: 0;
+    color: white; /* Optional: Change text color for contrast */
+}
+.text{
+    margin-right: 30px;
+    margin-left: 40px;
+    margin-top: 78px;
+}
+.text1{
+    margin-left: 40px;
+}
+.text *{
+    margin-right: 48px;
+    margin-left: 16px;
+}
+
+.container{
+    display: flex;
+    position: fixed;
+    left: 17px;
+    top: -3px;
+}
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container1 img{
+    margin-left: 15px;
+}
+.logo{
+    width: 158px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  
+}
+
+textarea#contractAddress{
+    background-color: transparent;
+    color: #dbc8c8;
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    outline: none;
+    border: none;
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Ensure text breaks */
+    overflow: hidden; /* Hide overflow */
+}
+
+input[type="text"]::placeholder {
+    color: #cccccc;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button img {
+    filter: invert(100%);
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 21px;
+}
+
+
+input[type="text"]:focus {
+    border-color: #888888;
+}
+
+.link-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #271c1c;
+    width: 161px;
+    margin-left: 34px;
+    height: 47px;
+    margin-top: 69px;
+    margin-bottom: 42px;
+}
+.link-container h4{
+    position: relative;
+    right: 6px;
+    top: -1px;
+
+}
+
+.image-button img {
+    width: 20px;
+    transition: transform 0.3s ease;
+    margin: 15px;
+}
+
+.image-button:hover img {
+    transform: scale(1.1);
+}
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #cccccc;
+}
+.link-color{
+    background-color: rgb(178 115 40);
+    margin-top: 20px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    width: 161px;
+    margin-left: 34px;
+    height: 47px;
+    margin-bottom: 104px;
+}
